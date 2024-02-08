@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Entrega</title>
+    
+    <!-- Link que permite conectar este Html con el Css para poder darle los estilos -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Este es un link que sirve para cambiar el favicon del sitio, en un futuro se implementara, por el momento no es propio a la consigna
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+</head>
+
+
+<body>
+
+
+    <!-- Vamos a crear un header y una seccion, el header se escribe asi porque es lo correcto, poner section no seria recomendado -->
+    <header>
+
+
+        <!-- Esta va a ser la seccion navegable, los items por donde el usario puede navegar en el sitio web, dentro del nav encontramos una lista desordenada o ul con dichos items expresados individualmente como li, y en su interior depositamos los links (a href) con sus nombres -->
+        <nav class="nav-0">
+
+            <!-- Normalmente para tener mayor control de los elementos se los coloca adentro de un div, esto mejora bastante cuando tienen clases -->
+            <!-- En el caso del logo yo prefiero dejarlo a un lado para que sea mas facilmente manipulable con flexbox -->
+            <!-- La imagen del logo podra linkear al inicio insertando una img en un a href -->
+            <div class="divlogobarra-0">
+                <a href="../index.html"><img src="../imagenes/0-logo.png" alt="mosoki inicio" class="logobarra-0"></a>
+            </div>
+
+            <ul class="ul-0">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="2-gustos.html">Gustos</a></li>
+                <li><a href="3-nosotros.html">Nosotros</a></li>
+                <li><a href="4-local.html">Local</a></li>
+                <li><a href="5-contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+
+    <section>
+
+        <!-- El contenedor constara de un titulo con un formulario en el lado izquierdo de la pantalla y una imagen en el lado derecho -->
+        <div class="contenedortotal-3-1">
+
+            <div class="contenedortexto-3-1">
+
+                <!-- En este caso empleo un h2 por ser mas pequeño y menos importante que un h1 -->
+                <div class="titulo-3-1">
+                    <h2>TENES ALGUNA PREGUNTA?</h2>
+                </div>
+                
+                <!-- Vamos a usar un formulario basico para simular uno verdadero empleando form, input y textarea -->
+                <!-- En el formulario al presionar enviar no va a funcionar ya que no esta subido a un servidor, es a modo de ejemplo para entender el accionar -->
+                <form method="post" name="miformulio" netlify>
+                    
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="email" name="correo" placeholder="Correo">     
+        
+                    <textarea name="Comentarios" id="comentarios" cols="30" rows="7" placeholder="Escribe tus Comentarios"></textarea>
+        
+                    <input type="submit" name="enviar" id="enviar">
+               
+                </form>
+
+            </div>
+
+            <div class="imagen-5-1">
+                <img src="../imagenes/5-1-contacto.jpg" alt="mujer dubitativa sosteniendo un helado">
+            </div>
+            
+        </div>
+
+
+    </section>
+
+   
+    <!-- En el footer se suele colocar la informacion de contacto, las redes, entre otras cosas, en este caso no lo voy a poner porque en mi web deberia estar mas abajo, pasando varias pantallas 
+
+    <footer>
+
+    </footer> -->
+
+
+
+</body>
+
+</html>

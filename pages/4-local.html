@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Entrega</title>
+    
+    <!-- Link que permite conectar este Html con el Css para poder darle los estilos -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Este es un link que sirve para cambiar el favicon del sitio, en un futuro se implementara, por el momento no es propio a la consigna
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+</head>
+
+
+<body>
+
+
+    <!-- Vamos a crear un header y una seccion, el header se escribe asi porque es lo correcto, poner section no seria recomendado -->
+    <header>
+
+
+        <!-- Esta va a ser la seccion navegable, los items por donde el usario puede navegar en el sitio web, dentro del nav encontramos una lista desordenada o ul con dichos items expresados individualmente como li, y en su interior depositamos los links (a href) con sus nombres -->
+        <nav class="nav-0">
+
+            <!-- Normalmente para tener mayor control de los elementos se los coloca adentro de un div, esto mejora bastante cuando tienen clases -->
+            <!-- En el caso del logo yo prefiero dejarlo a un lado para que sea mas facilmente manipulable con flexbox -->
+            <!-- La imagen del logo podra linkear al inicio insertando una img en un a href -->
+            <div class="divlogobarra-0">
+                <a href="../index.html"><img src="../imagenes/0-logo.png" alt="mosoki inicio" class="logobarra-0"></a>
+            </div>
+
+            <ul class="ul-0">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="2-gustos.html">Gustos</a></li>
+                <li><a href="3-nosotros.html">Nosotros</a></li>
+                <li><a href="4-local.html">Local</a></li>
+                <li><a href="5-contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+
+    <section>
+
+        <!-- El contenedor constara de los textos, estos iran en el lado izquierdo de la pantalla mientras que el mapa sera tratado aparte y colocado en la derecha junto con una bajada descriptiva -->
+        <div class="contenedortotal-3-1">
+
+            <div class="contenedortexto-3-1">
+
+                <!-- En este caso empleo un h2 por ser mas pequeño y menos importante que un h1 -->
+                <div class="titulo-3-1">
+                    <h2>VENITE A CONOCER NUESTRA TIENDA DE HELADOS</h2>
+                </div>
+                
+                <div class="bajada-3-1">
+                    <p>Nuestro horario de atención al público es de martes a domigo, de 12 a 22 hs. </p>
+                </div>
+
+            </div>
+
+            <!-- Aqui mismo vamos a armar un div que contenga el mapa importado desde google maps y un texto descriptivo, al mapa se le eliminara el width y el height predeterminados para editarlos en css -->
+            <div class="divmapa-3-1">
+
+                <div class="mapa-3-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.389863412698!2d-58.3871147233926!3d-34.594301857002506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab9973cb163%3A0xedf6238b36c251b2!2sArenales%201205%2C%20C1061AAK%20CABA!5e0!3m2!1ses!2sar!4v1705371605570!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="mapatexto-3-1">
+                    <p>Arenales 1205, ubicado entre las calles Arenales y Libertad.</p>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+    </section>
+
+   
+    <!-- En el footer se suele colocar la informacion de contacto, las redes, entre otras cosas, en este caso no lo voy a poner porque en mi web deberia estar mas abajo, pasando varias pantallas 
+
+    <footer>
+
+    </footer> -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1057 @@
+/* importamos multiples tipografias a la vez desde google fonts para que puedan ser visualizables desde otros navegadores */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+/* Eliminamos el padding y margin predeterminado */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* A PARTIR DE AQUI COMIENZA EL HEADER */
+
+header {
+
+    background-color: #2A3B9C;
+}
+
+.header-g-1 {
+
+    grid-area: header-g-1;
+}
+
+/* Usamos un punto adelante para llamar a la clase */
+/* Empleamos esta tecnica para modificar el padding siguiendo las agujas del reloj, la misma tambien sera usada con el margin */
+/* Con display flex permitimos que la caja sea flexible para modificar los elementos internos */
+/* Podemos emplear justify-content o align-items para manipular el contenido ya sea horizontalmente como de manera vertical */
+/* Ahora justificamos el contenido a ambos lados con justify-content space-between */
+.nav-0 {
+
+    padding: 22px 140px 22px 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-b {
+
+    background-color: #2A3B9C;
+}
+
+/* En este caso aliñeamos el item verticalmente utilizando align-items center */
+.divlogobarra-0 {
+
+    display: flex;
+    align-items: center;
+} 
+
+/* Aqui disminuimos el tamaño del logo con la propiedad width */
+.logobarra-a-b-0 {
+
+    width: 150px;
+}
+
+/* Empleamos los @media para que el contenido funcione solamente cuando nuestra pantalla cumpla una consigna, como ser un ancho maximo */
+@media only screen and (min-width: 991px) {
+    .logobarra-b-0 {
+
+        width: 135px;
+        margin: 14px 0 14px 98px;   
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .logobarra-b-0 {
+
+        width: 135px;
+        margin: 14px 0 14px 41px;   
+    }
+}
+
+.itemsbarra-b-0 {
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 40px;
+}
+
+/* Aqui voy a usar una pseudoclase, estas modifican el estado de un elemento independientemente de su estado por defecto. En este caso uso el hover, la misma afecta al cursos cuando nos posamos sobre las letras haciendo que se vuelvan de otro color */
+.itemsbarra-b-0:hover {
+
+    color: #C0F5FF;
+}
+
+@media only screen and (min-width: 991px) {
+    .navbar-expand-lg .navbar-collapse-b {
+        display: flex;
+        flex-basis: auto;
+        margin-right: 128px;
+    }
+}
+
+.navbar-collapse-b {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Para que el sistema responsive de grillas en distintos formatos sea posible aqui empleamos 3 @media con distintas medidas */
+@media only screen and (max-width: 991px) {
+
+    .boton-b-0 {
+        padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+        font-size: var(--bs-navbar-toggler-font-size);
+        line-height: 1;
+        color: var(--bs-navbar-color);
+        background-color: transparent;
+        border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+        border-radius: var(--bs-navbar-toggler-border-radius);
+        transition: var(--bs-navbar-toggler-transition);
+        border-color: white;
+        background-color: white;
+    }
+
+    .icono-b-0 {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: var(--bs-navbar-toggler-icon-bg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 991px) {
+
+    .boton-b-0 {
+        display: none;
+    }
+    
+}
+
+
+.logobarra-0 {
+
+    width: 135px;
+    display: flex;
+}
+
+/* Removemos los puntos de la lista */
+.ul-0 {
+
+    list-style-type: none;
+    display: flex;
+}
+
+/* En este caso llamamos al ultimo elemento mediante un enlace en cadena */
+/* Quitamos el subrayado de los items con text-decoration */
+/* LLamamos a la tipografia previamente importada con el uso de comillas */
+/* Empleamos preferentemente pixeles en la tipografia */
+/* Aplicamos otros estilos a la tipografia */
+.nav-0 ul li a {
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.nav-0 ul li a:hover {
+
+    color: #C0F5FF;
+}
+
+
+/* A PARTIR DE AQUI COMIENZAN LAS SECTIONS QUE LE CONTINUAN AL HEADER */
+
+/* .contenedortotal-1-1 {
+
+    display: flex;
+    height: 50rem;
+} */
+
+
+@media only screen and (min-width: 991px) {
+
+    #grilla-1-1 {
+        display: grid;
+        grid-template-rows: 9.2% 90.8%;
+        grid-template-columns: 60% 40%;
+
+        grid-template-areas:
+        "header-g-1 header-g-1"
+        "texto-g-1 imagen-g-1"   
+        ;
+
+        height: 100%;
+    }
+
+    .texto-g-1 {
+        grid-area: texto-g-1;
+        display: flex;
+    }
+    
+    .imagen-g-1 {
+        grid-area: imagen-g-1;
+    }
+
+
+
+    .ul-g {
+
+        list-style-type: none;
+        display: flex;
+    }
+
+    .logobarra-g {
+
+        width: 135px;
+        display: flex;
+    }
+
+    .divlogobarra-g {
+
+        display: flex;
+        align-items: center;
+    } 
+
+    .nav-g {
+
+        padding: 22px 140px 22px 110px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-g ul li a {
+
+        text-decoration: none;
+        color: white;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 21px;
+        font-weight: 300;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .nav-g ul li a:hover {
+
+        color: #C0F5FF;
+    }
+
+    .contenedortexto-1-1 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5rem; 
+    }
+    
+    
+    .titulo-1-1 {
+    
+        margin: 50px 0 8px 110px;
+        width: 60%;
+        color: #2A3B9C;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 35px;
+        font-weight: 800;
+        text-align: left;
+        letter-spacing: 0.1px; 
+        line-height: 1.2; 
+    }
+    
+    .bajada-a {
+    
+        margin: 10px 0 25px 110px;
+        width: 45%;
+        color: black;
+        font-family: 'Mulish', sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        text-align: left;
+        line-height: 1.4;
+    }
+    
+    .boton-1-1 {
+    
+        margin: 22px 0 20px 110px;
+        padding: 15px 25px;
+        width: 123px;
+        background-color: #2A3B9C;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: left;
+    
+        /* Mas estilos posibles para el boton que dejare de lado
+        border: 1px solid black; */
+    }
+
+
+    
+    .imagen-1-1 img {
+    
+        width: 26rem;
+    }
+
+    .imagen-1-1 {
+
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+        margin-right: 2rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+
+    #grilla-1-1 {
+        display: grid;
+        grid-template-rows: 255px 42% 36%;
+        grid-template-columns: 100%;
+
+        grid-template-areas:
+        "header-g-1"
+        "texto-g-1" 
+        "imagen-g-1"   
+        ;
+
+        height: 100%;
+    }
+
+    .texto-g-1 {
+        grid-area: texto-g-1;
+    }
+    
+    .imagen-g-1 {
+        grid-area: imagen-g-1;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .ul-g {
+
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logobarra-g {
+
+        width: 125px;
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .divlogobarra-g {
+
+        display: flex;
+        align-items: center;
+    } 
+
+    .nav-g {
+
+        padding: 22px 140px 22px 45px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .nav-g ul li a {
+
+        text-decoration: none;
+        color: white;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 21px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    .nav-g ul li a:hover {
+
+        color: #C0F5FF;
+    }
+
+    .nav-g ul li {
+
+        margin-bottom: 5px;
+    }
+
+    .contenedortexto-1-1 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5rem; 
+    }
+    
+    
+    .titulo-1-1 {
+        
+        display: flex;
+        margin: 50px 0 8px 0;
+        width: 60%;
+        color: #2A3B9C;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 35px;
+        font-weight: 800;
+        text-align: left;
+        letter-spacing: 0.1px; 
+        line-height: 1.2; 
+    }
+
+    .titulo-1-1 h1 {
+        
+        text-align: center; 
+    }
+
+    .contenedortitulo-1-1 {
+        
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .bajada-a {
+        
+        margin: 10px 0 25px 0;
+        width: 45%;
+        color: black;
+        font-family: 'Mulish', sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        text-align: left;
+        line-height: 1.4;
+    }
+
+    .bajada-a p {
+        
+        text-align: center;
+    }
+
+    .contenedorbajada-1-1 {
+    
+        justify-content: center;
+        display: flex;
+    }
+    
+    .boton-1-1 {
+    
+        margin: 22px 0 20px 0;
+        padding: 15px 25px;
+        width: 123px;
+        background-color: #2A3B9C;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: left;
+    
+        /* Mas estilos posibles para el boton que dejare de lado
+        border: 1px solid black; */
+    }
+
+    .contenedorboton-1-1 {
+        
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imagen-1-1 img {
+    
+        width: 20rem;
+    }
+    
+    .imagen-1-1 {
+
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+    #grilla-1-1 {
+        display: grid;
+        grid-template-rows: 255px 38% 36%;
+        grid-template-columns: 100%;
+
+        grid-template-areas:
+        "header-g-1"
+        "texto-g-1" 
+        "imagen-g-1"   
+        ;
+
+        height: 100%;
+    }
+
+    .texto-g-1 {
+        grid-area: texto-g-1;
+    }
+    
+    .imagen-g-1 {
+        grid-area: imagen-g-1;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .ul-g {
+
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logobarra-g {
+
+        width: 125px;
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .divlogobarra-g {
+
+        display: flex;
+        align-items: center;
+    } 
+
+    .nav-g {
+
+        padding: 22px 140px 22px 45px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .nav-g ul li a {
+
+        text-decoration: none;
+        color: white;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 21px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    .nav-g ul li a:hover {
+
+        color: #C0F5FF;
+    }
+
+    .nav-g ul li {
+
+        margin-bottom: 5px;
+    }
+
+    .contenedortexto-1-1 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5rem; 
+    }
+    
+    
+    .titulo-1-1 {
+        
+        display: flex;
+        margin: 50px 0 8px 0;
+        width: 80%;
+        color: #2A3B9C;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 25px;
+        font-weight: 800;
+        text-align: left;
+        letter-spacing: 0.1px; 
+        line-height: 1.2; 
+    }
+
+    .titulo-1-1 h1 {
+        
+        text-align: center; 
+    }
+
+    .contenedortitulo-1-1 {
+        
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .bajada-a {
+        
+        margin: 10px 0 25px 0;
+        width: 80%;
+        color: black;
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: left;
+        line-height: 1.4;
+    }
+
+    .bajada-a p {
+        
+        text-align: center;
+    }
+
+    .contenedorbajada-1-1 {
+    
+        justify-content: center;
+        display: flex;
+    }
+    
+    .boton-1-1 {
+    
+        margin: 21px 0 19px 0;
+        padding: 14px 18px;
+        width: 123px;
+        background-color: #2A3B9C;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: left;
+    
+        /* Mas estilos posibles para el boton que dejare de lado
+        border: 1px solid black; */
+    }
+
+    .boton-1-1 a {
+    
+        text-align: center;
+    }
+
+    .contenedorboton-1-1 {
+        
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imagen-1-1 img {
+    
+        width: 20rem;
+    }
+    
+    .imagen-1-1 {
+
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+}
+
+
+.boton-1-1 a {
+
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+/* En este caso usamos la pseudoclase active, la misma fuciona cuando hacemos click o mantenemos pulsado el boton */
+.boton-1-1:active {
+    
+    background-color: #C0F5FF;
+}
+
+
+
+
+
+
+
+
+.contenedortotal-2-1 {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+}
+
+.contenedorgustos-2-1 {
+    display: flex;
+    height: 70%;
+    justify-content: center;
+}
+
+.bloquegustos-2-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2A3B9C;
+    padding: 40px 50px 0 50px;
+
+}
+
+.gustogeneral1-2-1 {
+    width: 8rem;
+    margin: 0 20px;
+}
+
+.gustogeneral2-2-1 {
+    width: 14rem;
+    margin: 0 20px;
+}
+
+.gustogeneral3-2-1 {
+    width: 15rem;
+    margin: 0 20px;
+}
+
+.gustogeneral4-2-1 {
+    width: 11rem;
+    margin: 0 20px;
+}
+
+.gustogeneral5-2-1 {
+    width: 10rem;
+    margin: 48px 20px 0 20px;
+}
+
+.gustogeneral1-2-1 h3 {
+    list-style: none;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.gustogeneral2-2-1 h3 {
+    list-style: none;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.gustogeneral3-2-1 h3 {
+    list-style: none;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.gustogeneral4-2-1 h3 {
+    list-style: none;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.gustogeneral1-2-1 ul {
+    list-style: none;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.gustogeneral2-2-1 ul {
+    list-style: none;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.gustogeneral3-2-1 ul {
+    list-style: none;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.gustogeneral4-2-1 ul {
+    list-style: none;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.gustogeneral5-2-1 ul {
+    list-style: none;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+
+
+.contenedortotal-3-1 {
+
+    display: flex;
+    height: 50rem;
+}
+
+/* Con flex-direction le damos la direccion a los items, en este caso a modo de columna */
+
+/* .contenedortexto-2-1 {
+
+} */
+
+.contenedortotal-2-n {
+    display: flex;
+    flex-direction: column;
+    height: 44rem;
+}
+
+
+@media only screen and (min-width: 576px) {
+
+    .titulo-2-n {
+
+        display: Flex;
+        justify-content: center;
+        margin: 60px 0 58px 0px;
+        color: #2A3B9C;
+        font-family: 'Inter Tight', sans-serif;
+        text-align: center;
+        letter-spacing: 0.1px; 
+        line-height: 1.3; 
+    }
+
+    .titulo-2-n h2 {
+
+        font-size: 45px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .titulo-2-n {
+
+        display: Flex;
+        justify-content: center;
+        margin: 60px 0 58px 0px;
+        color: #2A3B9C;
+        font-family: 'Inter Tight', sans-serif;
+        text-align: center;
+        letter-spacing: 0.1px; 
+        line-height: 1.3; 
+    }
+
+    .titulo-2-n h2 {
+
+        font-size: 33px;
+        font-weight: 700;
+    }
+}
+
+
+.contenedortexto-3-1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem; 
+    width: 55rem;
+}
+
+.titulo-2-1 {
+
+    display: Flex;
+    justify-content: center;
+    margin: 60px 0 58px 0px;
+    color: #2A3B9C;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.1px; 
+    line-height: 1.3; 
+}
+
+.titulo-3-1 {
+
+    margin: 50px 0 8px 110px;
+    width: 80%;
+    color: #2A3B9C;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    letter-spacing: 0.1px; 
+    line-height: 1.3; 
+}
+
+.bajada-3-1 {
+
+    margin: 10px 0 25px 110px;
+    width: 60%;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.imagen-2-1 {
+
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.imagen-2-1 img {
+
+    width: 29rem;
+}
+
+.divmapa-3-1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mapa-3-1 {
+
+    display: flex;
+    align-items: center;
+    margin-top: 1.55rem;
+    margin-left: 10rem;
+}
+
+.mapa-3-1 iframe {
+
+    width: 45rem;
+    height: 30rem;
+}
+
+.mapatexto-3-1 {
+
+    margin: 20px 0 1px 1px;
+    padding-left: 10.1rem;
+    width: 70%;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.imagen-5-1 {
+
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 20rem;
+}
+
+.imagen-5-1 img {
+
+    width: 29rem;
+}
+
+form {
+
+    padding: 30px 0 25px 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Mulish', sans-serif;
+    margin: 10px 0;
+}
+
+form input::placeholder {
+
+    color: rgb(83, 83, 83);
+}
+
+form textarea::placeholder {
+
+    color: rgb(83, 83, 83);
+}
+
+form textarea {
+
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 10px;
+}
+
+#enviar {
+
+    background-color: #2A3B9C;
+    color: aliceblue;
+    font-size: 23px;
+    font-weight: 400;
+    border: none;
+    width: 7rem;
+    height: 3.1rem;
+}
+
+#enviar:active {
+
+    background-color: #C0F5FF;
+}

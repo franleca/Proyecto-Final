@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Entrega</title>
+    
+    <!-- Link que permite conectar este Html con el Css para poder darle los estilos -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Este es un link que sirve para cambiar el favicon del sitio, en un futuro se implementara, por el momento no es propio a la consigna
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+</head>
+
+
+<body>
+
+
+    <!-- Vamos a crear un header y una seccion, el header se escribe asi porque es lo correcto, poner section no seria recomendado -->
+    <header>
+
+
+        <!-- Esta va a ser la seccion navegable, los items por donde el usario puede navegar en el sitio web, dentro del nav encontramos una lista desordenada o ul con dichos items expresados individualmente como li, y en su interior depositamos los links (a href) con sus nombres -->
+        <nav class="nav-0">
+
+            <!-- Normalmente para tener mayor control de los elementos se los coloca adentro de un div, esto mejora bastante cuando tienen clases -->
+            <!-- En el caso del logo yo prefiero dejarlo a un lado para que sea mas facilmente manipulable con flexbox -->
+            <!-- La imagen del logo podra linkear al inicio insertando una img en un a href -->
+            <div class="divlogobarra-0">
+                <a href="../index.html"><img src="../imagenes/0-logo.png" alt="mosoki inicio" class="logobarra-0"></a>
+            </div>
+
+            <ul class="ul-0">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="2-gustos.html">Gustos</a></li>
+                <li><a href="3-nosotros.html">Nosotros</a></li>
+                <li><a href="4-local.html">Local</a></li>
+                <li><a href="5-contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+
+    <section>
+
+        <!-- El contenedor constara del titulo y un bloque de desarrollo de los gustos -->
+        <div class="contenedortotal-2-1">
+
+            
+            <!-- En este caso empleo un h2 por ser mas pequeño y menos importante que un h1 -->
+            <div class="titulo-2-1">
+                <h2>NUESTRA VARIEDAD DE SABORES</h2>
+            </div>
+
+
+            <div class="contenedorgustos-2-1">
+                
+                <div class="bloquegustos-2-1">
+
+                    <!-- En este caso empleo un h3 por ser un titulo de menor tamaño y jerarquia que un h2 -->
+                    <!-- Debajo de cada titulo coloco una lista desordenada (el ul con varios li) -->
+                    <div class="gustogeneral1-2-1">
+
+                        <h3>Frutales</h3>
+                        <ul>
+                            <li>Durazno</li>
+                            <li>Frambuesa</li>
+                            <li>Maracuya</li>
+                            <li>Pomelo</li>
+                            <li>Limon</li>
+                            <li>Pera</li>
+                            <li>Uva</li>
+                            <li>Frutilla</li>
+                            <li>Manzana</li>
+                            <li>Banana</li>
+                            <li>Ciruela</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="gustogeneral2-2-1">
+
+                        <h3>Chocolates</h3>
+                        <ul>
+                            <li>Chocolate</li>
+                            <li>Chocolate Amargo</li>
+                            <li>Chocolate c/ Avellanas</li>
+                            <li>Chocolate c/ Almendras</li>
+                            <li>Chocolate c/ Naranja</li>
+                            <li>Chocolate c/ Pasas</li>
+                            <li>Chocolate Relleno</li>
+                            <li>Chocolate Sureño</li>
+                            <li>Chocolate Blanco</li>
+                            <li>Chocolate Mosoki</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="gustogeneral3-2-1">
+
+                        <h3>Dulce de Leche</h3>
+                        <ul>
+                            <li>Dulce de Leche</li>
+                            <li>Dulce de Leche Sureño</li>
+                            <li>Dulce de Leche c/ Nueces</li>
+                            <li>Dulce de Leche c/ Brownie</li>
+                            <li>Dulce de Leche Granizado</li>
+                            <li>Dulce de Leche Relleno</li>
+                            <li>Dulce de Leche c/ Oreo</li>
+                            <li>Dulce de Leche Cabsha</li>
+                            <li>Dulce de Leche Mosoki</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="gustogeneral4-2-1">
+
+                        <h3>Cremas</h3>
+                        <ul>
+                            <li>Marroc</li>
+                            <li>Mantecol</li>
+                            <li>Limon Mosoki</li>
+                            <li>Mousse de Limón</li>
+                            <li>Menta Granizada</li>
+                            <li>Crema Rusa</li>
+                            <li>Sambayón</li>
+                            <li>Tiramisú</li>
+                            <li>Crema Oreo</li>
+                            <li>Tramontana</li>
+                            <li>Americana</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="gustogeneral5-2-1">
+
+                        <ul>
+                            <li>Banana Split</li>
+                            <li>Kinotos al Whisky</li>
+                            <li>Frutilla a la Crema</li>
+                            <li>Frutilla a la Reina</li>
+                            <li>Fran c/ DDL</li>
+                            <li>Crema del Cielo</li>
+                            <li>Alfajor Artesanal</li>
+                            <li>Ferrero Rocher</li>
+                            <li>Vainilla</li>
+                            <li>Chocotorta</li>
+                            <li>Granizado</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+   
+    <!-- En el footer se suele colocar la informacion de contacto, las redes, entre otras cosas, en este caso no lo voy a poner porque en mi web deberia estar mas abajo, pasando varias pantallas 
+
+    <footer>
+
+    </footer> -->
+
+
+
+</body>
+
+</html>

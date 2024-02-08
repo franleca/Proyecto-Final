@@ -899,6 +899,33 @@ header {
 }
 
 
+.container-parte-n {
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: #2A3B9C;
+}
+
+.imagen-3-n img {
+
+    width: 80%;
+}
+
+.imagen-3-n {
+
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-h3-n {
+
+    display: flex;
+}
+
+
+
+
 .contenedortexto-3-1 {
 
     display: flex;

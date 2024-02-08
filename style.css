@@ -99,7 +99,6 @@ header {
     justify-content: flex-end;
 }
 
-/* Para que el sistema responsive de grillas en distintos formatos sea posible aqui empleamos 3 @media con distintas medidas */
 @media only screen and (max-width: 991px) {
 
     .boton-b-0 {
@@ -174,15 +173,18 @@ header {
 
 /* A PARTIR DE AQUI COMIENZAN LAS SECTIONS QUE LE CONTINUAN AL HEADER */
 
+/* Podemos desactivar de momento, pero en el futuro lo reestablecemos */
 /* .contenedortotal-1-1 {
 
     display: flex;
     height: 50rem;
 } */
 
-
+/* Para que el sistema responsive de grillas en distintos formatos sea posible aqui empleamos 3 @media con distintas medidas */
 @media only screen and (min-width: 991px) {
 
+    /* Dentro seleccionamos que parte en el sistema de grillas le corresponde a cada seccion del html, tambien modificamos la cantidad y el tamaño de las filas y las columnas */
+    /* Notese que el header con su area se mantuvieron en la parte de arriba para mejorar la organizacion */
     #grilla-1-1 {
         display: grid;
         grid-template-rows: 9.2% 90.8%;
@@ -247,7 +249,8 @@ header {
 
         color: #C0F5FF;
     }
-
+    
+    /* Con flex-direction le damos la direccion a los items, en este caso a modo de columna */
     .contenedortexto-1-1 {
 
         display: flex;
@@ -460,9 +463,6 @@ header {
         font-size: 25px;
         font-weight: 400;
         text-align: left;
-    
-        /* Mas estilos posibles para el boton que dejare de lado
-        border: 1px solid black; */
     }
 
     .contenedorboton-1-1 {
@@ -634,9 +634,6 @@ header {
         font-size: 24px;
         font-weight: 400;
         text-align: left;
-    
-        /* Mas estilos posibles para el boton que dejare de lado
-        border: 1px solid black; */
     }
 
     .boton-1-1 a {
@@ -843,8 +840,6 @@ header {
     height: 50rem;
 }
 
-/* Con flex-direction le damos la direccion a los items, en este caso a modo de columna */
-
 /* .contenedortexto-2-1 {
 
 } */
@@ -985,19 +980,6 @@ header {
     font-weight: 300;
     text-align: left;
     line-height: 1.5;
-}
-
-.imagen-2-1 {
-
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: 2rem;
-}
-
-.imagen-2-1 img {
-
-    width: 29rem;
 }
 
 .divmapa-3-1 {

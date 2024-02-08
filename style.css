@@ -916,11 +916,24 @@ header {
 
     display: flex;
     justify-content: center;
+    margin-top: 8%;
 }
 
 .titulo-h3-n {
 
     display: flex;
+    justify-content: center;
+    margin: 5% 0 3% 0;
+}
+
+.titulo-h3-n h3 {
+
+    color: #C0F5FF;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.4;   
 }
 
 

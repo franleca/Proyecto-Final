@@ -25,6 +25,9 @@
     <meta property="og:description" content="LLega a tu casa la oportunidad soñada de pedir helados mortales en tiempo y forma, elegi entre la enorme variedad de gustos y disfruta tu helado con amigos, viendo una peli, o de cualquier otra forma!">
     <meta property="og:title" content="En Mosoki animate a descubrir un sabor delicioso!">
 
+    <!-- Link que permite emplear bootstrap en mi sitio web -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 
 
@@ -34,9 +37,38 @@
     <!-- Vamos a crear un header y una seccion, el header se escribe asi porque es lo correcto, poner section no seria recomendado -->
     <header>
 
+        <!-- Aqui mismo importamos un navbar de Bootstrap y lo editamos modificando sus clases y su contenido -->
+        <nav class="navbar navbar-expand-lg nav-b">
+            <div class="container-fluid">
+                <a href="../index.html" class="logobarra-a-b-0"><img src="../imagenes/0-logo.png" alt="mosoki inicio" class="logobarra-b-0"></a>
+              
+                <button class="boton-b-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span  class="icono-b-0"></span>
+                </button>
+                <div class="navbar-collapse-b" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="itemsbarra-b-0" class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="itemsbarra-b-0" class="nav-link" href="2-gustos.html">Gustos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="itemsbarra-b-0" class="nav-link" href="3-nosotros.html" class="itemsbarra-b-0">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="itemsbarra-b-0" class="nav-link" href="4-local.html" class="itemsbarra-b-0">Local</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="itemsbarra-b-0" class="nav-link" href="5-contacto.html" class="itemsbarra-b-0">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
 
-        <!-- Esta va a ser la seccion navegable, los items por donde el usario puede navegar en el sitio web, dentro del nav encontramos una lista desordenada o ul con dichos items expresados individualmente como li, y en su interior depositamos los links (a href) con sus nombres -->
-        <nav class="nav-0">
+        <!-- En este caso prefiero dejar como comentario esta antigua version de navbar y que sirva como ejemplo de etapas pasadas -->
+        <!-- <nav class="nav-0">
 
             <div class="divlogobarra-0">
                 <a href="../index.html"><img src="../imagenes/0-logo.png" alt="mosoki inicio" class="logobarra-0"></a>
@@ -50,8 +82,7 @@
                 <li><a href="5-contacto.html">Contacto</a></li>
             </ul>
 
-        </nav>
-
+        </nav> -->
 
     </header>
 
@@ -182,6 +213,8 @@
     </footer> -->
 
 
+    <!-- Aqui importamos el link de javascript, este mismo junto con el de bootstrap deben ser importados a la vez -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 

@@ -1,0 +1,14 @@
+
+@mixin nosotros-flex ($display, $flex-direction) {
+
+    /* Mixin nos permite decidir en el futuro cuando incluyamos este mixin en un elemento, que valores van a tener las propiedades que estan dentro del mixin */
+    display: $display;
+    flex-direction: $flex-direction;
+} 
+
+
+@mixin nosotros-font-size-weight ($font-size, $font-weight) {
+
+    font-size: $font-size;
+    font-weight: $font-weight;
+} 

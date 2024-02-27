@@ -1,0 +1,23 @@
+
+%gustos-h3-text {
+
+    /* Los extends funcionan como una bolsa con propiedades para reutilizar o transladar a distintos lugares */
+    color: rgb(255, 255, 255);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.4;  
+}
+
+%gustos-ul-text {
+
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 0;
+    padding-left: 0;
+}

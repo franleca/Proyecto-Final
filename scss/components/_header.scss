@@ -1,0 +1,269 @@
+/* Importamos el archivo de mapas para que logre funcionar */
+@import "../base/mapas";
+
+.header-g-1 {
+
+    grid-area: header-g-1;
+    /* De esta forma traemos lo solicitado de mapas para despues poder modificarlo con mas facilidad */
+    background-color: map-get($header-mapas , color-backround );
+    
+
+    /* Empleamos los @media para que el contenido funcione solamente cuando nuestra pantalla cumpla una consigna, como ser un ancho maximo */
+    .nav-g {
+
+        @media only screen and (min-width: 991px) {
+
+            padding: 22px 140px 22px 110px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media only screen and (max-width: 991px) {
+
+            padding: 22px 140px 22px 45px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+
+        .divlogobarra-g {
+            
+            display: flex;
+            align-items: center;           
+
+
+            .logobarra-g {
+
+                @media only screen and (min-width: 991px) {
+
+                    width: 135px;
+                    display: flex;
+                }
+    
+                @media only screen and (max-width: 991px) {
+    
+                    width: 125px;
+                    display: flex;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+    ul {
+
+        @media only screen and (min-width: 991px) {
+
+            list-style-type: none;
+            display: flex;
+        }   
+        
+        @media only screen and (max-width: 991px) {
+
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+        } 
+
+
+
+        li {
+
+            @media only screen and (max-width: 991px) {
+
+                margin-bottom: 5px;
+            }
+
+            a {
+
+                @media only screen and (min-width: 991px) {
+
+                    text-decoration: none;
+                    color: map-get($header-mapas , color-letters );
+                    font-family: 'Inter Tight', sans-serif;
+                    font-size: map-get($header-mapas , letters-size );
+                    font-weight: map-get($header-mapas , letters-weight );
+                    text-align: left;
+                    margin-left: 40px;
+                }
+
+                @media only screen and (min-width: 576px) and (max-width: 991px) {
+
+                    text-decoration: none;
+                    color: map-get($header-mapas , color-letters );
+                    font-family: 'Inter Tight', sans-serif;
+                    font-size: map-get($header-mapas , letters-size );
+                    font-weight: map-get($header-mapas , letters-weight );
+                    text-align: left;
+                }
+
+                @media only screen and (max-width: 576px) {
+
+                    text-decoration: none;
+                    color: map-get($header-mapas , color-letters );
+                    font-family: 'Inter Tight', sans-serif;
+                    font-size: map-get($header-mapas , letters-size );
+                    font-weight: map-get($header-mapas , letters-weight );
+                    text-align: left;
+                }
+
+
+                
+                &:hover {
+
+                    /* Aqui voy a usar una pseudoclase, estas modifican el estado de un elemento independientemente de su estado por defecto. */
+                    color: map-get($header-mapas , color-letters-effect );
+                }
+
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+.header-b {
+       
+    .nav-b {
+
+        background-color: map-get($header-mapas , color-backround );
+
+
+
+        .container-fluid {
+
+
+            .logobarra-b-0 {
+
+                @media only screen and (min-width: 991px) {      
+                
+                    width: 135px;
+                    margin: 14px 0 14px 98px;              
+                }
+                
+                @media only screen and (max-width: 991px) {
+                
+                    width: 135px;
+                    margin: 14px 0 14px 41px;                
+                }
+
+            }
+
+
+            .logobarra-a-b-0 {
+
+                /* Aqui disminuimos el tamaño del logo con la propiedad width */
+                width: 150px;
+            }
+
+
+            
+            .boton-b-0 {
+
+                @media only screen and (max-width: 991px) {
+                    
+                    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+                    font-size: var(--bs-navbar-toggler-font-size);
+                    line-height: 1;
+                    color: var(--bs-navbar-color);
+                    background-color: transparent;
+                    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+                    border-radius: var(--bs-navbar-toggler-border-radius);
+                    transition: var(--bs-navbar-toggler-transition);
+
+                    border-color: map-get($header-mapas , buttom-color );
+                    background-color: map-get($header-mapas , buttom-color );              
+                }
+                
+                @media only screen and (min-width: 991px) {
+                
+                    display: none;  
+                }
+
+            }
+
+
+           
+            .icono-b-0 {
+
+                @media only screen and (max-width: 991px) {
+             
+                    display: inline-block;
+                    width: 1.5em;
+                    height: 1.5em;
+                    vertical-align: middle;
+                    background-image: var(--bs-navbar-toggler-icon-bg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100%;
+                }
+
+            }
+
+
+            #navbarb {
+
+                justify-content: flex-end;
+                margin-right: 128px;
+            }
+
+            .navbar-expand-lg .navbar-collapse-b {
+
+                @media only screen and (min-width: 991px) {
+                    
+                    display: flex;
+                    flex-basis: auto;
+                }
+
+            }
+            
+            
+            .navbar-collapse-b {
+
+                flex-basis: 100%;
+                flex-grow: 1;          
+            }     
+                
+            .nav-item {
+
+                    .itemsbarra-b-0 {
+
+                        color: map-get($header-mapas , color-letters );
+
+                        text-decoration: none;
+                        font-family: 'Inter Tight', sans-serif;
+                        font-size: map-get($header-mapas , letters-size );
+                        font-weight: map-get($header-mapas , letters-weight );
+                        text-align: left;
+                        margin-left: 40px;
+
+                        &:hover {
+
+                            color: map-get($header-mapas , color-letters-effect );
+                        }
+
+                    }
+
+                }
+
+
+            
+
+            
+        }
+       
+    }
+
+}
+

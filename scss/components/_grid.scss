@@ -1,0 +1,49 @@
+/* Para que el sistema responsive de grillas en distintos formatos sea posible aqui empleamos 3 @media con distintas medidas */
+#grilla-1-1 {
+
+    @media only screen and (min-width: 991px) {
+    /* Dentro seleccionamos que parte en el sistema de grillas le corresponde a cada seccion del html, tambien modificamos la cantidad y el tamaño de las filas y las columnas */
+
+        display: grid;
+        grid-template-rows: 9.2% 90.8%;
+        grid-template-columns: 60% 40%;
+
+        grid-template-areas:
+        "header-g-1 header-g-1"
+        "texto-g-1 imagen-g-1"   
+        ;
+
+        height: 100%;
+    }  
+    
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
+
+        display: grid;
+        grid-template-rows: 255px 42% 36%;
+        grid-template-columns: 100%;
+
+        grid-template-areas:
+        "header-g-1"
+        "texto-g-1" 
+        "imagen-g-1"   
+        ;
+
+        height: 100%;
+    }   
+
+    @media only screen and (max-width: 576px) {
+
+        display: grid;
+        grid-template-rows: 255px 38% 36%;
+        grid-template-columns: 100%;
+
+        grid-template-areas:
+        "header-g-1"
+        "texto-g-1" 
+        "imagen-g-1"   
+        ;
+
+        height: 100%;
+    }   
+
+}

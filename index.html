@@ -26,6 +26,9 @@
     <meta property="og:description" content="LLega a tu casa la oportunidad soñada de pedir helados mortales en tiempo y forma, elegi entre la enorme variedad de gustos y disfruta tu helado con amigos, viendo una peli, o de cualquier otra forma!">
     <meta property="og:title" content="En Mosoki animate a descubrir un sabor delicioso!">
 
+    <!-- Agregamos el enlace al cdn de la biblioteca de animacion css dentro del head -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 
@@ -95,10 +98,16 @@
 
         <section class="imagen-g-1">
 
-            <div class="imagen-1-1">
-                <img src="imagenes/1-1-helado.jpg" alt="mano sosteniendo un helado">
-            </div>
+            
+                <div class="imagen-1-1">
 
+                    <!-- Para poder animar usando aos creamos un div con el atributo data-aos y un valor, este tiene que encerrar el elemento a animar -->
+                    <div data-aos="fade-up-left">
+                        <img src="imagenes/1-1-helado.jpg" alt="mano sosteniendo un helado">
+                    </div>
+
+                </div>
+            
 
         <section>
 
@@ -114,6 +123,9 @@
     </footer> -->
 
 
+    <!-- Colocamos el enlace al cdn del script js y la etiqueta script con la inicializacion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
 
 </body>
 

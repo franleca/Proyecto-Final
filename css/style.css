@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-/* Importamos los archivos partials al archivo principal */
+/* Importamos archivos partials al archivo principal */
 /* Importamos el archivo de mapas para que logre funcionar */
 .header-g-1 {
   grid-area: header-g-1;

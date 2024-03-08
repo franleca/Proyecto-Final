@@ -20,7 +20,7 @@
 
         @media only screen and (max-width: 991px) {
 
-            padding: 22px 140px 22px 45px;
+            padding: 22px 140px 22px 38px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -78,7 +78,7 @@
 
             @media only screen and (max-width: 991px) {
 
-                margin-bottom: 5px;
+                margin-bottom: 6.5px;
             }
 
             a {
@@ -135,6 +135,14 @@
 
 .header-b {
        
+    .navbar {
+
+        @media only screen and (max-width: 991px) {
+                
+            padding: 18px 20px 25px 1px;                
+        }
+    }
+
     .nav-b {
 
         background-color: map-get($header-mapas , color-backround );
@@ -154,8 +162,8 @@
                 
                 @media only screen and (max-width: 991px) {
                 
-                    width: 135px;
-                    margin: 14px 0 14px 41px;                
+                    width: 125px;
+                    margin: 14px 0 17px 25px;                
                 }
 
             }
@@ -239,14 +247,30 @@
 
                     .itemsbarra-b-0 {
 
-                        color: map-get($header-mapas , color-letters );
+                        @media only screen and (min-width: 991px) {      
+                
+                            color: map-get($header-mapas , color-letters );
 
-                        text-decoration: none;
-                        font-family: 'Inter Tight', sans-serif;
-                        font-size: map-get($header-mapas , letters-size );
-                        font-weight: map-get($header-mapas , letters-weight );
-                        text-align: left;
-                        margin-left: 40px;
+                            text-decoration: none;
+                            font-family: 'Inter Tight', sans-serif;
+                            font-size: map-get($header-mapas , letters-size );
+                            font-weight: map-get($header-mapas , letters-weight );
+                            text-align: left;
+                            margin-left: 40px;              
+                        }
+                        
+                        @media only screen and (max-width: 991px) {
+                        
+                            color: map-get($header-mapas , color-letters );
+
+                            text-decoration: none;
+                            font-family: 'Inter Tight', sans-serif;
+                            font-size: map-get($header-mapas , letters-size );
+                            font-weight: map-get($header-mapas , letters-weight );
+                            text-align: left;
+                            margin-left: 25px;                
+                        }
+
 
                         &:hover {
 

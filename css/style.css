@@ -24,7 +24,7 @@
 }
 @media only screen and (max-width: 991px) {
   .header-g-1 .nav-g {
-    padding: 22px 140px 22px 45px;
+    padding: 22px 140px 22px 38px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -63,7 +63,7 @@
 }
 @media only screen and (max-width: 991px) {
   .header-g-1 ul li {
-    margin-bottom: 5px;
+    margin-bottom: 6.5px;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -102,6 +102,11 @@
   color: #C0F5FF;
 }
 
+@media only screen and (max-width: 991px) {
+  .header-b .navbar {
+    padding: 18px 20px 25px 1px;
+  }
+}
 .header-b .nav-b {
   background-color: #2A3B9C;
 }
@@ -113,8 +118,8 @@
 }
 @media only screen and (max-width: 991px) {
   .header-b .nav-b .container-fluid .logobarra-b-0 {
-    width: 135px;
-    margin: 14px 0 14px 41px;
+    width: 125px;
+    margin: 14px 0 17px 25px;
   }
 }
 .header-b .nav-b .container-fluid .logobarra-a-b-0 {
@@ -166,14 +171,27 @@
   flex-basis: 100%;
   flex-grow: 1;
 }
-.header-b .nav-b .container-fluid .nav-item .itemsbarra-b-0 {
-  color: white;
-  text-decoration: none;
-  font-family: "Inter Tight", sans-serif;
-  font-size: 21px;
-  font-weight: 300;
-  text-align: left;
-  margin-left: 40px;
+@media only screen and (min-width: 991px) {
+  .header-b .nav-b .container-fluid .nav-item .itemsbarra-b-0 {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header-b .nav-b .container-fluid .nav-item .itemsbarra-b-0 {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 25px;
+  }
 }
 .header-b .nav-b .container-fluid .nav-item .itemsbarra-b-0:hover {
   color: #C0F5FF;
@@ -225,7 +243,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5rem;
+}
+@media only screen and (min-width: 991px) {
+  .texto-g-1 .contenedortexto-1-1 {
+    margin-bottom: 5rem;
+    margin-top: 1.5rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .texto-g-1 .contenedortexto-1-1 {
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .texto-g-1 .contenedortexto-1-1 {
+    margin-bottom: 5rem;
+    margin-top: 1.25rem;
+  }
 }
 @media only screen and (max-width: 991px) {
   .texto-g-1 .contenedortexto-1-1 .contenedortitulo-1-1 {
@@ -390,11 +425,20 @@
     grid-area: imagen-g-1;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 991px) {
   .imagen-g-1 {
     grid-area: imagen-g-1;
     display: flex;
     justify-content: center;
+    margin-bottom: 7%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .imagen-g-1 {
+    grid-area: imagen-g-1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 11%;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -405,11 +449,18 @@
     margin-right: 2rem;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 991px) {
   .imagen-g-1 .imagen-1-1 {
     display: flex;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .imagen-g-1 .imagen-1-1 {
+    display: flex;
+    align-items: center;
+    margin-top: 3.75rem;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -417,9 +468,14 @@
     width: 26rem;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 991px) {
   .imagen-g-1 .imagen-1-1 img {
     width: 20rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .imagen-g-1 .imagen-1-1 img {
+    width: 16rem;
   }
 }
 
@@ -458,15 +514,41 @@
     flex-direction: column;
   }
 }
-.contenedortotal-2-1 .titulo-2-1 {
-  display: Flex;
-  justify-content: center;
-  margin: 60px 0 58px 0px;
-  color: #2A3B9C;
-  font-family: "Inter Tight", sans-serif;
-  text-align: center;
-  letter-spacing: 0.1px;
-  line-height: 1.3;
+@media only screen and (min-width: 1200px) {
+  .contenedortotal-2-1 .titulo-2-1 {
+    display: Flex;
+    justify-content: center;
+    margin: 70px 0 65px 0px;
+    color: #2A3B9C;
+    font-family: "Inter Tight", sans-serif;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 1200px) {
+  .contenedortotal-2-1 .titulo-2-1 {
+    display: Flex;
+    justify-content: center;
+    margin: 85px 0 90px 0px;
+    color: #2A3B9C;
+    font-family: "Inter Tight", sans-serif;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 1.3;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedortotal-2-1 .titulo-2-1 {
+    display: Flex;
+    justify-content: center;
+    margin: 60px 0 65px 0px;
+    color: #2A3B9C;
+    font-family: "Inter Tight", sans-serif;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 1.3;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .contenedortotal-2-1 .titulo-2-1 h2 {
@@ -478,14 +560,14 @@
   .contenedortotal-2-1 .titulo-2-1 h2 {
     font-size: 45px;
     font-weight: 700;
-    margin: 0 30px;
+    margin: 0 40px;
   }
 }
 @media only screen and (max-width: 576px) {
   .contenedortotal-2-1 .titulo-2-1 h2 {
     font-size: 35px;
     font-weight: 700;
-    margin: 0 30px;
+    margin: 0 34px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -499,14 +581,14 @@
   .contenedortotal-2-1 .contenedorgustos-2-1 {
     display: flex;
     justify-content: center;
-    height: 116rem;
+    height: 120rem;
   }
 }
 @media only screen and (max-width: 576px) {
   .contenedortotal-2-1 .contenedorgustos-2-1 {
     display: flex;
     justify-content: center;
-    height: 115rem;
+    height: 117rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -629,17 +711,40 @@
   /* Mixin nos permite decidir en el futuro cuando incluyamos este mixin en un elemento, que valores van a tener las propiedades que estan dentro del mixin */
   display: flex;
   flex-direction: column;
-  height: 44rem;
+}
+@media only screen and (max-width: 767px) {
+  .contenedortotal-2-n {
+    margin-bottom: 7rem;
+  }
 }
 .contenedortotal-2-n .contenedortexto-2-n .titulo-2-n {
   display: Flex;
   justify-content: center;
-  margin: 60px 0 58px 0px;
   color: #2A3B9C;
   font-family: "Inter Tight", sans-serif;
   text-align: center;
   letter-spacing: 0.1px;
   line-height: 1.3;
+}
+@media only screen and (min-width: 991px) {
+  .contenedortotal-2-n .contenedortexto-2-n .titulo-2-n {
+    margin: 70px 0 58px 0px;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .contenedortotal-2-n .contenedortexto-2-n .titulo-2-n {
+    margin: 75px 0 58px 0px;
+  }
+}
+@media only screen and (min-width: 422px) and (max-width: 767px) {
+  .contenedortotal-2-n .contenedortexto-2-n .titulo-2-n {
+    margin: 85px 0 75px 0px;
+  }
+}
+@media only screen and (max-width: 422px) {
+  .contenedortotal-2-n .contenedortexto-2-n .titulo-2-n {
+    margin: 60px 0 50px 0px;
+  }
 }
 @media only screen and (min-width: 576px) {
   .contenedortotal-2-n .contenedortexto-2-n .titulo-2-n h2 {
@@ -686,7 +791,6 @@
 @media only screen and (min-width: 1100px) {
   .contenedortotal-3-1 {
     display: flex;
-    height: 50rem;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -700,8 +804,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5rem;
     width: 55rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 1100px) {
+  .contenedortotal-3-1 .contenedortexto-3-1 {
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -723,7 +831,7 @@
 }
 @media only screen and (min-width: 576px) and (max-width: 1100px) {
   .contenedortotal-3-1 .contenedortexto-3-1 .titulo-3-1 {
-    margin: 61px 0 8px 80px;
+    margin: 85px 0 8px 80px;
     width: 80%;
     color: #2A3B9C;
     font-family: "Inter Tight", sans-serif;
@@ -734,7 +842,7 @@
 }
 @media only screen and (max-width: 576px) {
   .contenedortotal-3-1 .contenedortexto-3-1 .titulo-3-1 {
-    margin: 61px 0 8px 70px;
+    margin: 61px 0 8px 45px;
     width: 80%;
     color: #2A3B9C;
     font-family: "Inter Tight", sans-serif;
@@ -754,6 +862,21 @@
     font-size: 45px;
     font-weight: 700;
     margin-right: 40px;
+  }
+}
+@media only screen and (min-width: 1269px) and (max-width: 1342px) {
+  .contenedortotal-3-1 .contenedortexto-3-1 .titulo-3-1 h2 {
+    width: 27.4rem;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 600px) {
+  .contenedortotal-3-1 .contenedortexto-3-1 .titulo-3-1 h2 {
+    width: 440px;
+  }
+}
+@media only screen and (min-width: 432px) and (max-width: 480px) {
+  .contenedortotal-3-1 .contenedortexto-3-1 .titulo-3-1 h2 {
+    width: 340px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -789,7 +912,7 @@
 }
 @media only screen and (max-width: 576px) {
   .contenedortotal-3-1 .contenedortexto-3-1 .bajada-3-1 {
-    margin: 10px 0 25px 70px;
+    margin: 10px 0 25px 45px;
     width: 60%;
     color: black;
     font-family: "Mulish", sans-serif;
@@ -805,13 +928,14 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 80px;
+    margin-top: 5rem;
   }
 }
 @media only screen and (max-width: 1100px) {
   .contenedortotal-3-1 .divmapa-3-1 {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 }
 .contenedortotal-3-1 .divmapa-3-1 .mapa-3-1 {
@@ -867,7 +991,6 @@
 @media only screen and (min-width: 991px) {
   .contenedortotal-5-1 {
     display: flex;
-    height: 50rem;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -881,7 +1004,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-top: 4rem;
     width: 55rem;
   }
 }
@@ -905,7 +1028,7 @@
 }
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   .contenedortotal-5-1 .contenedortexto-5-1 .titulo-5-1 {
-    margin: 61px 0 8px 80px;
+    margin: 85px 0 8px 80px;
     width: 80%;
     color: #2A3B9C;
     font-family: "Inter Tight", sans-serif;
@@ -916,7 +1039,7 @@
 }
 @media only screen and (max-width: 576px) {
   .contenedortotal-5-1 .contenedortexto-5-1 .titulo-5-1 {
-    margin: 61px 0 8px 60px;
+    margin: 61px 0 8px 45px;
     width: 80%;
     color: #2A3B9C;
     font-family: "Inter Tight", sans-serif;
@@ -954,14 +1077,14 @@
 }
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   .contenedortotal-5-1 .contenedortexto-5-1 form {
-    padding: 30px 0 8px 80px;
+    padding: 30px 100px 8px 80px;
     display: flex;
     flex-direction: column;
   }
 }
 @media only screen and (max-width: 576px) {
   .contenedortotal-5-1 .contenedortexto-5-1 form {
-    padding: 30px 50px 8px 60px;
+    padding: 30px 50px 8px 45px;
     display: flex;
     flex-direction: column;
   }
@@ -1038,21 +1161,21 @@
     display: flex;
     align-items: center;
     margin-left: 6rem;
+    margin-top: 5rem;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   .contenedortotal-5-1 .imagen-5-1 {
     display: flex;
     align-items: center;
-    margin-left: 5rem;
-    margin-bottom: 6rem;
+    margin: 0.5rem 0 6rem 5rem;
   }
 }
 @media only screen and (max-width: 576px) {
   .contenedortotal-5-1 .imagen-5-1 {
     display: flex;
     align-items: center;
-    margin-left: 3.7rem;
+    margin-left: 45px;
     margin-bottom: 6rem;
   }
 }

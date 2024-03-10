@@ -24,7 +24,7 @@
 }
 @media only screen and (max-width: 991px) {
   .header-g-1 .nav-g {
-    padding: 22px 140px 22px 38px;
+    padding: 22px 140px 0 38px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -42,10 +42,10 @@
 }
 @media only screen and (max-width: 991px) {
   .header-g-1 .nav-g .divlogobarra-g .logobarra-g {
-    width: 125px;
+    width: 135px;
     display: flex;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 17px;
+    margin-top: 6px;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -103,31 +103,31 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .header-b .navbar {
-    padding: 18px 20px 25px 1px;
+  .header-bt .navbar {
+    padding: 13px 17px 18px 1px;
   }
 }
-.header-b .nav-b {
+.header-bt .nav-bt {
   background-color: #2A3B9C;
 }
 @media only screen and (min-width: 991px) {
-  .header-b .nav-b .container-fluid .logobarra-b-0 {
+  .header-bt .nav-bt .container-fluid .logobarra-bt-0 {
     width: 135px;
     margin: 14px 0 14px 98px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .header-b .nav-b .container-fluid .logobarra-b-0 {
-    width: 125px;
-    margin: 14px 0 17px 25px;
+  .header-bt .nav-bt .container-fluid .logobarra-bt-0 {
+    width: 135px;
+    margin: 15px 0 14px 25px;
   }
 }
-.header-b .nav-b .container-fluid .logobarra-a-b-0 {
+.header-bt .nav-bt .container-fluid .logobarra-a-bt-0 {
   /* Aqui disminuimos el tamaño del logo con la propiedad width */
   width: 150px;
 }
 @media only screen and (max-width: 991px) {
-  .header-b .nav-b .container-fluid .boton-b-0 {
+  .header-bt .nav-bt .container-fluid .boton-bt-0 {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
     font-size: var(--bs-navbar-toggler-font-size);
     line-height: 1;
@@ -141,12 +141,12 @@
   }
 }
 @media only screen and (min-width: 991px) {
-  .header-b .nav-b .container-fluid .boton-b-0 {
+  .header-bt .nav-bt .container-fluid .boton-bt-0 {
     display: none;
   }
 }
 @media only screen and (max-width: 991px) {
-  .header-b .nav-b .container-fluid .icono-b-0 {
+  .header-bt .nav-bt .container-fluid .icono-bt-0 {
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
@@ -157,22 +157,14 @@
     background-size: 100%;
   }
 }
-.header-b .nav-b .container-fluid #navbarb {
-  justify-content: flex-end;
-  margin-right: 128px;
-}
-@media only screen and (min-width: 991px) {
-  .header-b .nav-b .container-fluid .navbar-expand-lg .navbar-collapse-b {
-    display: flex;
-    flex-basis: auto;
+@media (min-width: 992px) {
+  .header-bt .nav-bt .container-fluid .navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 128px;
   }
 }
-.header-b .nav-b .container-fluid .navbar-collapse-b {
-  flex-basis: 100%;
-  flex-grow: 1;
-}
 @media only screen and (min-width: 991px) {
-  .header-b .nav-b .container-fluid .nav-item .itemsbarra-b-0 {
+  .header-bt .nav-bt .container-fluid .nav-item .itemsbarra-bt-0 {
     color: white;
     text-decoration: none;
     font-family: "Inter Tight", sans-serif;
@@ -183,7 +175,7 @@
   }
 }
 @media only screen and (max-width: 991px) {
-  .header-b .nav-b .container-fluid .nav-item .itemsbarra-b-0 {
+  .header-bt .nav-bt .container-fluid .nav-item .itemsbarra-bt-0 {
     color: white;
     text-decoration: none;
     font-family: "Inter Tight", sans-serif;
@@ -193,7 +185,7 @@
     margin-left: 25px;
   }
 }
-.header-b .nav-b .container-fluid .nav-item .itemsbarra-b-0:hover {
+.header-bt .nav-bt .container-fluid .nav-item .itemsbarra-bt-0:hover {
   color: #C0F5FF;
 }
 
@@ -211,7 +203,7 @@
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   #grilla-1-1 {
     display: grid;
-    grid-template-rows: 255px 42% 36%;
+    grid-template-rows: 243px 42% 36%;
     grid-template-columns: 100%;
     grid-template-areas: "header-g-1" "texto-g-1" "imagen-g-1";
     height: 100%;
@@ -220,7 +212,7 @@
 @media only screen and (max-width: 576px) {
   #grilla-1-1 {
     display: grid;
-    grid-template-rows: 255px 38% 36%;
+    grid-template-rows: 243px 38% 36%;
     grid-template-columns: 100%;
     grid-template-areas: "header-g-1" "texto-g-1" "imagen-g-1";
     height: 100%;
@@ -438,7 +430,7 @@
     grid-area: imagen-g-1;
     display: flex;
     justify-content: center;
-    margin-bottom: 11%;
+    margin-bottom: 9%;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -616,8 +608,8 @@
     flex-direction: column;
     justify-content: start;
     background-color: #2A3B9C;
-    padding: 35px 18px 0 7px;
-    height: 110rem;
+    padding: 33px 16px 0 7px;
+    height: 109.4rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1004,7 +996,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 3.75rem;
     width: 55rem;
   }
 }
@@ -1092,7 +1084,7 @@
 @media only screen and (min-width: 576px) {
   .contenedortotal-5-1 .contenedortexto-5-1 form input {
     font-size: 20px;
-    background-color: transparent;
+    background-color: #f1f1f1;
     border: none;
     font-family: "Mulish", sans-serif;
     margin: 10px 0;
@@ -1101,7 +1093,7 @@
 @media only screen and (max-width: 576px) {
   .contenedortotal-5-1 .contenedortexto-5-1 form input {
     font-size: 18px;
-    background-color: transparent;
+    background-color: #f1f1f1;
     border: none;
     font-family: "Mulish", sans-serif;
     margin: 10px 0;
@@ -1111,20 +1103,35 @@
   color: rgb(83, 83, 83);
 }
 @media only screen and (min-width: 576px) {
+  .contenedortotal-5-1 .contenedortexto-5-1 form .contacto-rellenar {
+    padding: 7px 0px 7px 10px;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedortotal-5-1 .contenedortexto-5-1 form .contacto-rellenar {
+    padding: 7px 0px 7px 10px;
+    margin: 10px 0;
+  }
+}
+@media only screen and (min-width: 576px) {
   .contenedortotal-5-1 .contenedortexto-5-1 form textarea {
     font-size: 20px;
-    background-color: transparent;
+    background-color: #f1f1f1;
     border: none;
     font-family: "Mulish", sans-serif;
     margin-top: 10px;
+    padding: 7px 0px 7px 10px;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 576px) {
   .contenedortotal-5-1 .contenedortexto-5-1 form textarea {
     font-size: 18px;
-    background-color: transparent;
+    background-color: #f1f1f1;
     border: none;
     font-family: "Mulish", sans-serif;
+    padding: 7px 0px 7px 10px;
     margin-top: 10px;
   }
 }
@@ -1140,6 +1147,7 @@
     border: none;
     width: 7rem;
     height: 3.1rem;
+    margin-top: 50px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1151,6 +1159,7 @@
     border: none;
     width: 6.3rem;
     height: 2.8rem;
+    margin-top: 50px;
   }
 }
 .contenedortotal-5-1 .contenedortexto-5-1 form #enviar:active {
@@ -1161,7 +1170,7 @@
     display: flex;
     align-items: center;
     margin-left: 6rem;
-    margin-top: 5rem;
+    margin-top: 4.75rem;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 991px) {

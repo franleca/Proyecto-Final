@@ -19,7 +19,7 @@
     @media only screen and (min-width: 576px) and (max-width: 991px) {
 
         display: grid;
-        grid-template-rows: 255px 42% 36%;
+        grid-template-rows: 243px 42% 36%;
         grid-template-columns: 100%;
 
         grid-template-areas:
@@ -34,7 +34,7 @@
     @media only screen and (max-width: 576px) {
 
         display: grid;
-        grid-template-rows: 255px 38% 36%;
+        grid-template-rows: 243px 38% 36%;
         grid-template-columns: 100%;
 
         grid-template-areas:

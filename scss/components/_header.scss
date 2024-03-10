@@ -20,7 +20,7 @@
 
         @media only screen and (max-width: 991px) {
 
-            padding: 22px 140px 22px 38px;
+            padding: 22px 140px 0 38px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -43,10 +43,10 @@
     
                 @media only screen and (max-width: 991px) {
     
-                    width: 125px;
+                    width: 135px;
                     display: flex;
-                    margin-bottom: 20px;
-                    margin-top: 10px;
+                    margin-bottom: 17px;
+                    margin-top: 6px;
                 }
 
             }
@@ -133,17 +133,21 @@
 
 
 
-.header-b {
-       
+
+
+.header-bt {
+
+
     .navbar {
 
         @media only screen and (max-width: 991px) {
                 
-            padding: 18px 20px 25px 1px;                
+            padding: 13px 17px 18px 1px;                         
         }
     }
 
-    .nav-b {
+
+    .nav-bt {
 
         background-color: map-get($header-mapas , color-backround );
 
@@ -152,7 +156,7 @@
         .container-fluid {
 
 
-            .logobarra-b-0 {
+            .logobarra-bt-0 {
 
                 @media only screen and (min-width: 991px) {      
                 
@@ -162,22 +166,20 @@
                 
                 @media only screen and (max-width: 991px) {
                 
-                    width: 125px;
-                    margin: 14px 0 17px 25px;                
+                    width: 135px;
+                    margin: 15px 0 14px 25px;               
                 }
 
-            }
+            }  
 
 
-            .logobarra-a-b-0 {
+            .logobarra-a-bt-0 {
 
                 /* Aqui disminuimos el tamaño del logo con la propiedad width */
                 width: 150px;
             }
-
-
             
-            .boton-b-0 {
+            .boton-bt-0 {
 
                 @media only screen and (max-width: 991px) {
                     
@@ -200,10 +202,9 @@
                 }
 
             }
+            
 
-
-           
-            .icono-b-0 {
+            .icono-bt-0 {
 
                 @media only screen and (max-width: 991px) {
              
@@ -220,74 +221,68 @@
             }
 
 
-            #navbarb {
 
-                justify-content: flex-end;
-                margin-right: 128px;
-            }
+            @media (min-width: 992px) {
 
-            .navbar-expand-lg .navbar-collapse-b {
+                .navbar-collapse {
 
-                @media only screen and (min-width: 991px) {
-                    
-                    display: flex;
-                    flex-basis: auto;
+                    justify-content: flex-end;
+                    margin-right: 128px;
                 }
-
             }
-            
-            
-            .navbar-collapse-b {
 
-                flex-basis: 100%;
-                flex-grow: 1;          
-            }     
-                
+
+
             .nav-item {
 
-                    .itemsbarra-b-0 {
+                .itemsbarra-bt-0 {
 
-                        @media only screen and (min-width: 991px) {      
-                
-                            color: map-get($header-mapas , color-letters );
+                    @media only screen and (min-width: 991px) {      
+            
+                        color: map-get($header-mapas , color-letters );
 
-                            text-decoration: none;
-                            font-family: 'Inter Tight', sans-serif;
-                            font-size: map-get($header-mapas , letters-size );
-                            font-weight: map-get($header-mapas , letters-weight );
-                            text-align: left;
-                            margin-left: 40px;              
-                        }
-                        
-                        @media only screen and (max-width: 991px) {
-                        
-                            color: map-get($header-mapas , color-letters );
+                        text-decoration: none;
+                        font-family: 'Inter Tight', sans-serif;
+                        font-size: map-get($header-mapas , letters-size );
+                        font-weight: map-get($header-mapas , letters-weight );
+                        text-align: left;
+                        margin-left: 40px;              
+                    }
+                    
+                    @media only screen and (max-width: 991px) {
+                    
+                        color: map-get($header-mapas , color-letters );
 
-                            text-decoration: none;
-                            font-family: 'Inter Tight', sans-serif;
-                            font-size: map-get($header-mapas , letters-size );
-                            font-weight: map-get($header-mapas , letters-weight );
-                            text-align: left;
-                            margin-left: 25px;                
-                        }
+                        text-decoration: none;
+                        font-family: 'Inter Tight', sans-serif;
+                        font-size: map-get($header-mapas , letters-size );
+                        font-weight: map-get($header-mapas , letters-weight );
+                        text-align: left;
+                        margin-left: 25px;                
+                    }
 
 
-                        &:hover {
+                    &:hover {
 
-                            color: map-get($header-mapas , color-letters-effect );
-                        }
-
+                        color: map-get($header-mapas , color-letters-effect );
                     }
 
                 }
 
+            }
 
-            
 
-            
-        }
+
+
+
+
+
+
+        } 
+
+    } 
        
-    }
-
 }
+
+
 
